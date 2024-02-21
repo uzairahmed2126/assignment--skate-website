@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Skate Website</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            font-family: "Montserrat", sans-serif;
+
+        }
+
+        #main-img {
+            transition: transform 0.3s ease-in-out;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #header {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-auto-flow: column;
+            position: absolute;
+            gap: 50px;
+            grid-column: 1/4;
+            align-items: center;
+        }
+
+        #header>a {
+            text-decoration: none;
+            color: #07171de5;
+            text-align: end;
+            font-weight: 500;
+        }
+
+        #header>a:hover {
+            color: #09232c;
+        }
+
+        #logo {
+            border-radius: 22%;
+            padding: 10px;
+            width: 50px;
+            text-align: center;
+            margin: 10px;
+            margin-left: 50px;
+        }
+
+        /*  */
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            /* z-index: 1; */
+            /* position: absolute; */
+        }
+
+        #left {
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        #right {
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        /*  */
+        #footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <img id="logo" src="./images/logo.png" alt="Skater Republic Logo">
+        <a href="#">About</a>
+        <a href="#">Media</a>
+        <a href="#">News</a>
+        <a href="#">Purchase</a>
+        <a href="#">Social Media</a>
+        <a href="#">Contact Us</a>
+    </header>
+    <img id="main-img" src="./images/main.jpg" alt="Skater Republic Logo">
+    <div id="container">
+        <div id="left">
+            <h1>Skating</h1>
+            <p>Skating is a popular recreational activity and sport. It involves moving on surfaces with skates, which
+                are specialized equipment with wheels or blades. Skating can be done on ice, roller skates, or inline
+                skates (also known as rollerblades).</p>
+            <p>There are several forms of skating, including ice skating, roller skating, and skateboarding. Each form
+                has its own unique techniques, equipment, and culture.</p>
+        </div>
+        <div id="right">
+            <img src="./images/skate.jpg" alt="Skate" style="width: 100%;">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="footer-content">
+            <p>Follow us on social media:</p>
+            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2022 Skater Republic. All Rights Reserved.</p>
+    </div>
+</body>
+<script src=""></script>
+
+</html>
