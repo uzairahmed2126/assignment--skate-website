@@ -19,23 +19,33 @@
 
         body {
             font-family: "Montserrat", sans-serif;
-
         }
 
         #main-img {
             transition: transform 0.3s ease-in-out;
             max-width: 100%;
+            margin-top: 0;
+            height: auto;
+        }
+        #second-img {
+            transition: transform 0.3s ease-in-out;
+            max-width: 100%;
+            margin-top: -4px;
             height: auto;
         }
 
         #header {
-            display: grid;
+            background-color: #0112;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* display: grid;
             grid-template-columns: repeat(7, 1fr);
             grid-auto-flow: column;
             position: absolute;
             gap: 50px;
             grid-column: 1/4;
-            align-items: center;
+            align-items: center; */
         }
 
         #header>a {
@@ -59,25 +69,63 @@
         }
 
         /*  */
-        #container {
+        #container1 {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             padding: 20px;
-            /* z-index: 1; */
-            /* position: absolute; */
+            z-index: 1;
+            position: absolute;
+            top: 20em;
         }
 
-        #left {
+        #left1 {
+            /* background-color: #f0f0f0; */
+            padding: 10px;
+            grid-column: 2/2;
+        }
+
+        #right1 {
+            /* background-color: #e0e0e0; */
+            padding: 10px;
+            /* grid-column: 1/2; */
+        }
+/* 
+        #left2 {
             background-color: #f0f0f0;
-            padding: 20px;
+            padding: 10px;
+            grid-column: 2/2;
         }
 
-        #right {
+        #right2 {
             background-color: #e0e0e0;
-            padding: 20px;
+            padding: 10px;
+            grid-column: 2/3;
         }
 
+        #left3 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            grid-column: 4/2;
+        }
+
+        #right3 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            grid-column: 3/2;
+        }
+
+        #left4 {
+            background-color: #f0f0f0;
+            padding: 10px;
+            grid-column: 2/2;
+        }
+
+        #right4 {
+            background-color: #e0e0e0;
+            padding: 10px;
+            grid-column: 3/4;
+        } */
         h1 {
             color: #333;
         }
@@ -92,6 +140,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            z-index: -1;
         }
 
         .footer-content {
@@ -104,6 +153,24 @@
             font-size: 24px;
             margin: 0 10px;
             color: #fff;
+        }
+        h1{
+            color: #09232c;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #logo {
+            animation: fadeInUp 1s ease-out;
         }
     </style>
 </head>
@@ -119,8 +186,9 @@
         <a href="#">Contact Us</a>
     </header>
     <img id="main-img" src="./images/main.jpg" alt="Skater Republic Logo">
-    <div id="container">
-        <div id="left">
+    <img id="second-img" src="./images/second.jpg" alt="Skater Republic Logo">
+    <div id="container1">
+        <div id="left1">
             <h1>Skating</h1>
             <p>Skating is a popular recreational activity and sport. It involves moving on surfaces with skates, which
                 are specialized equipment with wheels or blades. Skating can be done on ice, roller skates, or inline
@@ -128,19 +196,59 @@
             <p>There are several forms of skating, including ice skating, roller skating, and skateboarding. Each form
                 has its own unique techniques, equipment, and culture.</p>
         </div>
-        <div id="right">
+        <div id="right1">
             <img src="./images/skate.jpg" alt="Skate" style="width: 100%;">
         </div>
+        <div id="left2">
+            <h1>Ice Skating</h1>
+            <p>Ice skating is a graceful and challenging sport that involves gliding on ice using ice skates. It is
+                practiced both recreationally and competitively, with various disciplines such as figure skating, ice
+                dancing, and speed skating.</p>
+            <p>Figure skating is known for its elegant and artistic performances, featuring jumps, spins, and intricate
+                footwork. Ice dancing focuses on synchronized movements and expression, often set to music. Speed
+                skating, on the other hand, emphasizes speed and endurance, with skaters racing around an oval track.
+            </p>
+        </div>
+        <div id="right2">
+            <img src="./images/main.jpg" alt="Ice Skating" style="width: 100%;">
+        </div>
+
+        <div id="left3">
+            <h1>Roller Skating</h1>
+            <p>Roller skating is a fun and energetic activity that involves moving on surfaces with roller skates. It
+                can be done indoors at roller rinks or outdoors on streets and sidewalks.</p>
+            <p>There are various styles of roller skating, including artistic roller skating, speed roller skating, and
+                roller derby. Artistic roller skating combines elements of dance and gymnastics, performed on roller
+                skates. Speed roller skating focuses on racing, with skaters competing to be the fastest. Roller derby
+                is a contact sport played on roller skates, requiring both speed and strategy.</p>
+        </div>
+        <div id="right3">
+            <img src="./images/skate.jpg" alt="Roller Skating" style="width: 100%;">
+        </div>
+
+        <div id="left4">
+            <h1>Skateboarding</h1>
+            <p>Skateboarding is a popular action sport that involves riding and performing tricks on a skateboard. It is
+                often done in skateparks, streets, and other urban environments.</p>
+            <p>Skateboarding has several disciplines, including street skateboarding, vert skateboarding, and freestyle
+                skateboarding. Street skateboarding focuses on tricks performed on urban obstacles like stairs, rails,
+                and ledges. Vert skateboarding involves riding and performing aerial tricks on a vertical ramp.
+                Freestyle skateboarding emphasizes creativity and expression, with skaters performing tricks in a more
+                artistic manner.</p>
+        </div>
+        <div id="right4">
+            <img src="./images/logo.png" alt="Skateboarding" style="width: 100%;">
+        </div>
     </div>
-    <div id="footer">
+
+    <!-- <div id="footer">
         <div id="footer-content">
             <p>Follow us on social media:</p>
-            <a href="#" class="icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="icon"><i class="fab fa-github"></i></a>
         </div>
-        <p>© 2022 Skater Republic. All Rights Reserved.</p>
-    </div>
+        <p>© 2024 Skater Republic. All Rights Reserved.</p>
+    </div> -->
 </body>
 <script src=""></script>
 
