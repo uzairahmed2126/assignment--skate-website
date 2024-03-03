@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/skate.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    animation-delay: 1.2s;
+}
+.slide2{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../images/main.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+}
+nav {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;   
+    justify-content: space-between;
+    gap: 10rem;
+}
+.logo{
+    width: 60px;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 40px; */
+}
+li {
+    font-size: 1.3pc;
+    text-align: center;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 10%;
+    max-width: 600px;
+    /* background-color: #c330d78a; */
+    padding: 10px 10%;
+    animation-delay: 1.2s;
+
+}
+.content h1{
+    font-size: 70px;
+    color: rgba(121, 250, 1, 0.747);
+}
+.content p{
+    margin: 10px 0 30px;
+    font-size: 20px;
+    color: black;
+    animation-delay: 0.5s;
+    
+}
+.content .btn{
+    padding: 15px 80px;
+    font-size: 16px;
+    animation-delay: 1s;
+}
+.feature-img{
+    width: 550px;
+    position: absolute;
+    bottom: 20%;
+    left: 55%;
+    outline: #df4881 solid 2px;
+    border-radius: 10px;
+    border: solid 2px #c330d78a;
+}
+.feature-img.anim{
+    animation-delay: 1.2s;
+}
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+.txt {
+    font-style: oblique;
+    font-stretch:narrower;
+    text-transform: capitalize;
+}
+@keyframes moveup {
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+        /* transition: all ease-out 2s; */
+    }
+    
+}
