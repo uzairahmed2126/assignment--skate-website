@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     const form = makeForm('form', 'id', 'form');
+    // form.method='post';
     const txtInput = makeForm('input', 'type', 'text');
     txtInput.required;
     const passInput = makeForm('input', 'type', 'password');
